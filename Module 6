@@ -1,0 +1,6 @@
+#Kondisi If
+
+tinggi = int(input("Masukkan tinggi ="))
+
+if(tinggi >= 180):
+  print("Nilai lebih besar dari seratus delapan puluh")
