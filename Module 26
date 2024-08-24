@@ -1,0 +1,31 @@
+def fibonacci(n): #penjumlahan dari dua bilangan sebelumnya dalam deret tersebut.
+  if n == 0 or n == 1:
+    return n
+  else:
+    return fibonacci(n - 1) + fibonacci(n - 2)
+
+print(fibonacci(10))
+
+
+
+
+def factorial(n): #Menghitung nilai faktorial suatu bilangan menggunakan fungsi rekursi
+  if n == 0: #jika n sama dengan 0 maka nilai faktorialnya 1
+    return 1
+  else:
+    return n * factorial(n - 1)
+
+print(a)
+
+
+
+bilangan = int(input('Masukkan bilangan:'))
+pangkat = int(input('Masukkan pangkat:'))
+def hitung_pangkat(bilangan, pangkat):
+  if pangkat > 1:
+    return bilangan * hitung_pangkat(bilangan, pangkat - 1)
+
+  return bilangan
+
+hasil = hitung_pangkat(bilangan, pangkat)
+print(f'Hasil = {hasil}')
