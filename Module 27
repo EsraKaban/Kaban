@@ -1,0 +1,54 @@
+# Python untuk search biner rekursif.
+
+# Mengembalikan indeks x dalam arr jika ada, jika tidak -1
+def binary_search(arr, rendah, tinggi, x):
+
+	# Kondisi dasar
+	if tinggi >= rendah: #jika tinggi lebih besar atau sama dengan rendah,
+	#maka proses pencarian dilanjutkan
+#tinggi=indeks akhir dari array
+#rendah=indeks awal dari array
+#x=elemen yang ingin dicari posisinya dalam array
+		mid = (tinggi + rendah) // 2 #mid dihitung dengan
+		#menjumlahkan tinggi dan rendah kemudian dibagi 2
+		 #(dibulatkan ke bawah menggunakan //)
+
+		# if element hadir di mid itu sendiri
+		if arr[mid] == x: #menjelaskan nilai sama dengan x,
+		#maka fungsi langsung mengembalikan mid sebagai
+		#indeks elemen yang ditemukan
+			return mid
+#baris ini mengecek apakah elemen yang dicari (x)
+#berada tepat di indeks mid dari array
+		# If element lebih kecil dari mid, maka hanya bisa
+		# hadir di subarray kiri
+		elif arr[mid] > x: #mengecek jika elemen yang dicari(x)
+		#lebih kecil dari nilai pada indeks mid
+    #artinya elemen yang dicari berada di sub-array sebelah kiri
+			return binary_search(arr, rendah, mid - 1, x)
+	 #fungsi binary_search dipanggil secara rekursif dengan parameter yang digunakan
+
+		# Else, element tersebut hanya dapat hadir di subarray kanan
+		else:
+			return binary_search(arr, mid + 1, tinggi, x) #jika elemen yang dicari
+      #lebih besar dari nilai pada indeks mid,
+      #maka elemen tersebut mungkin berada di sub-array sebelah kanan
+      #rendah=diubah menjadi mid+1 untuk fokus pada sub-array kanan
+	else:
+		# Element tidak hadir dalam array
+		return -1
+    #baris ini dieksekusi jika if tinggi tidak lagi lebih besar atau sama dengan rendah
+    #biasanya terjadi setelah pemanggilan fungsi rekursif berulang kali
+    #fungsi mengembalikan nilai -1 sebagai indikator elemen tidak ditemukan
+
+# Test array
+arr = [ 2, 3, 4, 10, 40 ] #array berisi angka
+x = 10 #menyimpan nilai x yang dicari(10)
+
+# Pemanggilan fungsi
+hasil = binary_search(arr, 0, len(arr)-1, x)
+
+if hasil != -1:
+	print("Element hadir dalam index", str(hasil))
+else:
+	print("Element tidak hadir dalam array")
