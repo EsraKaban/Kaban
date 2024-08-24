@@ -1,0 +1,20 @@
+##Penerapan Selection Sort pada bahasa pemograman Python##
+
+def selection_sort(a_list):#menerima satu parameter
+  for fill_slot in range(len(a_list) - 1, 0, -1):#berkurang satu setiap iterasi
+    pos_of_max = 0 #melacak posisi elemen terbesar dalam sub-list
+    for location in range(1, fill_slot + 1):
+        if a_list[location] > a_list[pos_of_max]:
+          pos_of_max = location
+
+    temp = a_list[fill_slot]
+    a_list[fill_slot] = a_list[pos_of_max]
+    a_list[pos_of_max] = temp #setelah menemukan elemen terbesar, el tsb ditukar dengan elemen posisi
+  return a_list
+
+contoh_list = [54, 32, 23, 12, 91, 78, 66, 2, 69]
+print('sebelum diurutkan:', contoh_list)
+sorted_list = selection_sort(contoh_list)
+print('setelah diurutkan:', sorted_list)
+
+
