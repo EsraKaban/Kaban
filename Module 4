@@ -1,0 +1,23 @@
+#Operator Pembanding
+a = 8
+b = 2
+
+c = a==b    #sama dengan
+print(a, "==", b, c)
+
+c = a != b    #tidak sama dengan
+print(a, "!=", b, c)
+
+c = a < b   #lebih kecil
+print(a, "<", b, c)
+
+c = a <= b  #lebih kecil sama dengan
+print(a, "<=", b, c)
+
+
+c = a > b   #lebih besar
+print(a, ">", b, c)
+
+
+c = a >= b  #lebih besar sama dengan
+print(a, ">=", b, c)
