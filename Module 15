@@ -1,0 +1,14 @@
+#Deklarasi Fungsi Percabangan
+def fungsi_percabangan (var_nilai) :
+    var_huruf = ""
+    if (var_nilai >= 0 and var_nilai < 20) :
+       var_huruf = "E"
+    elif (var_nilai >= 20 and var_nilai < 40) :
+       var_huruf = "D"
+    elif (var_nilai >= 40 and var_nilai < 60) :
+       var_huruf = "C"
+    elif (var_nilai >= 60 and var_nilai < 80) :
+       var_huruf = "B"
+    elif (var_nilai >= 80 and var_nilai < 100) :
+       var_huruf = "A"
+    return var_huruf
