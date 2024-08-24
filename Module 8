@@ -1,0 +1,7 @@
+#Penggunaan Ifelse
+
+harga_rumah = int(input("Masukkan harga ="))
+if(harga_rumah > 300):
+  print("Selamat Anda Punya Rumah Baru")
+else:
+    print("Maaf Duit Anda tidak cukup, Kerja lagi mas")
