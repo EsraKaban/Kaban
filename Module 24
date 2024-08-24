@@ -1,0 +1,59 @@
+#Menggabungkan Stack, Queue, List.
+
+from collections import deque
+
+print("=" * 5, "CONTOH 1: STACK", "=" * 5)
+X = [1, 2, 3, 4, 5, 6]
+print("Data Sekarang : ", X)
+
+# Memasukkan Data Baru
+X.append(7) #Menambahkan data 7 ke dalam stack dengan menggunakan fungsi append
+print("Data Masuk    : ", 7) #Data ke 7 sudah masuk
+print("Data Sekarang : ", X) #Menampilkan data setelah penambahan data 7
+
+X.append(8)
+print("Data Masuk    : ", 8)
+print("Data Sekarang : ", X)
+
+# Mengeluarkan Data Yang Terakhir
+X.pop() #Menghapus data terakhir dari stack dengan menggunakan fungsi pop
+print("Data Sekarang : ", X)
+
+# Stacking
+Y = X.pop()
+print("Data Keluar   : ", Y) #Menampilkan data yang dihapus dari stack
+print("Data Sekarang : ", X)  #Menampilkan data setelah penghapusan data terakhir
+
+print('\n\n')
+
+#=========================================
+print("=" * 5, "CONTOH 2: QUEUE", "=" * 5)
+
+Antrian = deque([1,2,3,4,5])  #Menampilkan data awal yang disimpan dalam variabel
+print("Data Sekarang : ", Antrian)
+
+# Menambahkan Data
+Antrian.append(6) #Menambahkan data 6 kedalam queue
+print("Data Masuk    : ", 6)
+print("Data Sekarang : ", Antrian)
+
+Antrian.append(7)
+print("Data Masuk    : ", 7)  #Menampilkan data masuk setelah penambahan data 7
+print("Data Sekarang : ", Antrian)
+
+# Mengurangi Antrian
+Z = Antrian.popleft() #(1) Menghapus data pertama
+print("Data Keluar   : ", Z)
+print("Data Sekarang : ", Antrian)
+
+Z = Antrian.popleft() #(2)Menghapus data pertama dari queue
+print("Data Keluar   : ", Z)
+print("Data Sekarang : ", Antrian)
+
+Z = Antrian.popleft() #(3)Menghapus data pertama dari queue menggunakan fungsi popleft
+print("Data Keluar   : ", Z)
+print("Data Sekarang : ", Antrian)
+
+Antrian.append(8)
+print("Data Masuk    : ", 8) #Menambahkan data 8 ke dalam queue
+print("Data Sekarang : ", Antrian)  #Menampilkan data setelah penambahan data 8
