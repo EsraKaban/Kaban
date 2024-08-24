@@ -1,0 +1,5 @@
+print(ord('c')) #karakter huruf menjadi nilai unicode
+print(ord('a')) #nilainya berdasarkan standar ASCII(American Standar Code For Information Interchange)
+print(ord('t')) #huruf diubah dalam bilangan desimal yang setara dengan 01100011(c) dalam biner
+#fungsi ord menerima satu karakter sebagai argumen
+#nilai output akan ditambah dan % ukuran tabel sehingga menghasilkan nilai 4
