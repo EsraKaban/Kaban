@@ -1,0 +1,15 @@
+#Sorting Algorithm
+
+def bubble_sort(a_list):#Menerima satu parameter
+  for pass_num in range(len(a_list) - 1, 0, -1):#loop berkurang setiap satu iterasi
+    for i in range(pass_num):#loop berjalan dari 0
+      if a_list[i] > a_list[i + 1]:#loop, kedua elemen ditukar
+        a_list[i], a_list[i + 1] = a_list[i + 1], a_list[i]
+  return a_list
+
+contoh_list = [54, 26, 93, 15, 31, 44, 20, 12, 40, 49]
+print('sebelum diurutkan:', contoh_list)
+sorted_list = bubble_sort(contoh_list)
+print('setelah diurutkan:', sorted_list)
+
+##Penerapan Bubble Sort pada bahasa pemograman Python##
