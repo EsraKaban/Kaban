@@ -1,0 +1,14 @@
+#Penggunaan Kelas dan Objek dan Fungsi secara bersamaan
+
+
+class Orang:
+  def __init__(self, nama, usia):
+    self.nama = nama
+    self.usia = usia
+
+
+
+p1 = Orang("Ali", 34)
+
+print(p1.nama)
+print(p1.usia)
