@@ -1,0 +1,19 @@
+##Penerapan Insertion Sort pada bahasa pemograman Python
+
+def insertion_sort(a_list):
+  for index in range (1, len(a_list)):#loop berjalan dari 1 hingga pjg daftar dikurangi 1
+    current_value = a_list[index] #menyimpan nilai elemen
+    position = index #variabel melacak posisi elemen bergerak ke kiri dlm daftar
+    while position > 0 and a_list[position - 1] > current_value:#berjalan selama position lebih besar dari 0, dipindahkan ke kanan
+      a_list[position] = a_list[position - 1]
+      position = position - 1
+    a_list[position] = current_value
+  return a_list
+
+
+contoh_list = [32, 45, 67, 96, 78, 84, 12, 56, 27, 9]
+print('sebelum diurutkan:', contoh_list)
+sorted_list = insertion_sort(contoh_list)
+print('setelah diurutkan:', sorted_list)
+
+#pengurutan sederhana dan efisien untuk daftar el dgn jumlah kecil
