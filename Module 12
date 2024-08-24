@@ -1,0 +1,9 @@
+#Perulangan For dengan List
+
+listKota = [
+  'Medan', 'Pekalongan', 'Banjarmasin', 'Purwokerto', 'Bali',
+  'Pemalang', 'Jambi', 'Makassar'
+]
+
+for kota in listKota:
+  print(kota)
