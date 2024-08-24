@@ -1,0 +1,17 @@
+#Queue dengan List
+from collections import deque #Mengimpor modul deque dari package collection.
+
+queue = deque() #Membuat queue kosong dengan menggunakan deque
+
+# Menambahkan elemen ke Queue
+queue.append(10)  #Menambahkan elemen 10 ke queue
+queue.append(11)  #Menambahkan elemen 11 ke queue
+queue.append(12)  #Menambahkan elemen 12 ke queue
+
+# Menghapus elemen dari Queue
+removed_element = queue.popleft() #Menghapus elemen pertama dari queue dan menyimpannya dalam variabel
+print("Elemen yang dihapus:", removed_element)
+
+# Melihat elemen terdepan Queue
+front_element = queue[0]  #Mengambil elemen pertama dari queue dan menyimpannya dalam variabel
+print("Elemen terdepan Queue:", front_element)
