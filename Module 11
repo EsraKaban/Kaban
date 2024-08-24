@@ -1,0 +1,11 @@
+#Perulangan While dengan eksekusi menggunakan Tipe data list
+pelanggan = ['Noval', 'Budi', 'Altrista', 'Dea', 'Hanifa']
+pelanggan_aktif = ['Noval', 'Altrista', 'Hanifa']
+
+i=0
+while i < len(pelanggan):
+	if pelanggan[i] in pelanggan_aktif:
+		print(pelanggan[i], 'aktif.')
+	else:
+		print (pelanggan[i], 'tidak aktif.')
+	i += 1
