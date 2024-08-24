@@ -1,0 +1,9 @@
+#Fungsi Hash pada python
+def hash(number, table_size):
+  return number % table_size
+#(%)digunakan untuk menghitung sisa pembagian elemen dengan ukuran tabel.
+#sisa pembagian ini digunakan sebagai indeks untuk menentukan posisi elemen pada
+#tabel hash
+Item = 50
+Ukuran_Tabel = 11
+print(hash(Item,Ukuran_Tabel))
