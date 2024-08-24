@@ -1,0 +1,19 @@
+#Implementasi stack dengan List
+
+stack = []  #Membuat stack kosong dengan menggunakan list kosong
+
+# Menambahkan elemen ke Stack
+stack.append(5) #Menambahkan elemen 5 ke stack
+stack.append(6) #Menambahkan elemen 6 ke stack
+stack.append(7) #Menambahkan elemen 7 ke stack
+print(stack)
+
+# Menghapus elemen dari Stack
+removed_element = stack.pop() #Menghapus elemen terakhir dari stack dan menyimpannya dalam variabel removed_element
+print("Elemen yang dihapus:", removed_element)
+
+# Melihat elemen teratas Stack
+top_element = stack[-1] #Mengambil elemen terakhir dari stack dan menyimpannya dalam variabel top_element
+print("Elemen teratas Stack:", top_element)
+
+print(stack)
