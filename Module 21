@@ -1,0 +1,24 @@
+import math
+
+# Menghitung luas lingkaran dengan radius 7
+luas = math.pi * math.pow(7, 2)
+print(luas)
+
+
+import datetime
+sekarang = datetime.datetime.now()
+print(sekarang)
+
+
+import datetime
+
+# Menambahkan 5 hari ke tanggal saat ini
+lima_hari_kemudian = sekarang + datetime.timedelta(days=5)
+print(lima_hari_kemudian)
+
+
+import random
+
+# Menghasilkan angka acak antara 1 dan 10
+angka_acak_diantara = random.randint(1, 10)
+print(angka_acak_diantara)
