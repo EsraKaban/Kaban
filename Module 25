@@ -1,0 +1,105 @@
+#Iterasi
+
+#iterasi pada while loop
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+
+
+#While loop dengan Break
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+
+
+#While loop dengan Continue
+i = 0
+while i < 6:
+  i += 1
+  if i == 3:
+    continue
+  print(i)
+
+
+#While Loop dengan Else
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+  print("i sudah tidak kurang dari 6")
+
+#For Loop untuk mencetak nama buah pada list
+buah = ["apel", "pisang", "mangga"]
+for x in buah:
+  print(x)
+
+
+#For Loop untuk mencetak huruf pada string
+
+for x in "apel":
+  print(x)
+
+
+
+#Break pada For Loop
+buah = ["apel", "durian", "pisang", "jambu", "mangga"]
+for x in buah:
+  print(x)
+  if x == "pisang":
+    break
+
+
+
+#Continue pada For Loop
+buah = ["apel", "durian", "pisang", "jambu", "mangga"]
+for x in buah:
+  if x == "pisang":
+    continue
+  print(x)
+
+
+
+#Fungsi range() pada for loop
+for x in range(5):
+  print(x)
+
+
+#Pengaturan Fungsi range() pada For Loop
+for x in range (2, 5):
+  print(x)
+
+
+
+
+#Penggunaan Else pada For Loop
+for x in range(5):
+  print(x)
+else:
+  print("selesai!")
+
+
+
+#Nested Loop pada For Loop
+buah = ["apel", "durian", "pisang", "jambu", "mangga"]
+sifat = ["merah", "matang", "manis"]
+
+for x in buah:
+  for y in sifat:
+    print(x,y)
+
+
+
+#Rekursi (Fungsi yang digunakan untuk memanggil dirinya sendiri)
+
+def list_sum(num_list): #Fungsi yang diasumsikan menjadi list nomor.
+  if len(num_list) == 1:  #Jika panjang list sama dengan 1
+    return num_list[0]  #Mengembalikan fungsi elemen
+  else:
+    return num_list[0] + list_sum(num_list[1:]) #num_list[0] digunakan pertama dalam list, num_list[1:] menghapus elemen pertama dari list asli.
+
+print(list_sum([2, 3, 6, 7, 9]))
