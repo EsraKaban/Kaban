@@ -1,0 +1,17 @@
+#Operator Logika
+a = True
+b = True
+c = False
+
+#Logika AND
+d = a and b and c
+print("a and b and c =", d)
+
+#Logika OR
+d = a or b or c
+print("a or b or c =", d)
+
+
+#Logika NOT
+d = not c
+print("not c =", d)
