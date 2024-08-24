@@ -1,0 +1,23 @@
+#Penggunaan Class
+
+# kelas Hamster sebagai "definisi"
+class Hamster:
+  warna = None
+  usia = None
+
+# membangun instance/variabel sebagai "objek nyata"
+Hamster1 = Hamster()
+Hamster1.warna = "Warna Oren"
+Hamster1.usia = "3 bulan"
+
+Hamster2 = Hamster()
+Hamster2.warna = "Warna putih"
+Hamster2.usia = "2 bulan"
+
+Hamster3 = Hamster()
+Hamster3.warna = "Warna abu-abu"
+Hamster3.usia = "3.5 bulan"
+
+print(Hamster1.warna, Hamster1.usia)
+print(Hamster2.warna, Hamster2.usia)
+print(Hamster3.warna, Hamster3.usia)
