@@ -1,0 +1,5 @@
+#While kondisi jika blok kode yang dijalankan
+i = 6
+while i > 1:
+	print(i)
+	i -= 1
