@@ -1,0 +1,44 @@
+#penggunaan type data pemograman python
+#tipe data boolean
+print("True")
+
+#tipe data string
+print("ayo belajar python")
+print("belajar python sangat mudah")
+
+#tipe data integer
+print(20)
+
+#tipe data float
+print(22.7)
+
+#tipe data hexadesimal
+print(type(0x9a))
+
+#tipe data complex
+print(5j)
+
+#tipe data tuple
+print((1,2,3,4,5))
+print(("satu", "dua", "tiga"))
+
+#tipe data list
+
+print([1,2,3,4,5])
+print(['satu', 'dua', 'tiga'])
+
+#tipe data dictionary
+
+print({"nama":'Budi', 'umur':20})
+
+#tipe data dictionary dimasukkan ke dalam variabel biodata
+
+biodata = {"nama": 'andi', 'umur':20} #proses inisialisasi variabel biodata
+
+print(biodata) #proses pencetakan biodata pada tipe data dictionary
+print(type(biodata))#fungsi untuk mengecek tipe data
+#akan tampil <class 'dict' yang berarti adalah tipe data dictionary
+
+baris = [1,2,3,4,5]
+nilai = baris[:-2]
+print(nilai)
