@@ -1,0 +1,20 @@
+#Mendefinisikan Variabel Pada Kondisi Elif
+
+nilai = 'S'
+
+if nilai <= 'A+':
+  print('Menyala Abangkuuuu')
+elif nilai == 'A':
+  print('Pertahankan Terus Abangkuu')
+elif nilai == 'B+':
+  print('Pertahankan Abangkuu')
+elif nilai == 'B':
+  print('Tingkatkan Lagi Abangkuu')
+elif nilai == 'C':
+  print('Main Game Trossss')
+elif nilai == 'D':
+  print('Menyedihkan Abangkuu')
+elif nilai == 'E':
+  print('Keluar aja dari kampus Abangkuu')
+else:
+  print('Nilai tidak Keluar')
