@@ -1,0 +1,14 @@
+#Fungsi Hash pada String
+def hash_string(a_string, table_size):
+  sum = 0 #menginisialisasi variabel sum dengan nilai 0
+  for pos in range(len(a_string)):#memulai loop yang akan iterasi sebanyak
+  #jumlah karakter dalam a_string
+  #variabel pos digunakan sebagai indeks untuk mengakses karakter per karakter
+  #di dalam string
+    sum = sum + ord(a_string[pos]) #mengambil karakter pada indeks pos dari a_string
+    #dan mengubahnya menjadi kode ASCII menggunakan fungsi ord
+    #nilai ASCII tersebut kemudian dijumlahkan dengan variabel sum
+  return sum % table_size
+
+print(hash_string('Biomedis',11)) #Nilai Biomedis(66,105,111,109,101,100,105,115)
+#Total sum menjadi 707
