@@ -1,0 +1,29 @@
+#operator aritmatika
+a = 8
+b = 3
+
+#operator penjumlahan
+c = a + b
+print("Hasil", a, "+", b, "=", c)
+
+
+#Operator pengurangan
+c = a - b
+print("Hasil", a, "-", b, "=", c)
+
+#Operator perkalian
+c = a*b
+print("Hasil", a, "*", b, "=", c)
+
+
+#Operator Pembagian
+c = a / b
+print("Hasil", a, "/", b, "=", c)
+
+#operator sisa bagi
+c = a % b
+print("Hasil", a, "%", b, "=", c)
+
+#Operator pangkat
+c = a ** b
+print("Hasil", a, "**", b, "=", c)
