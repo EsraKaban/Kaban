@@ -1,0 +1,23 @@
+##Penerapan Shell Short pada bahasa pemograman Python
+def shell_sort(a_list):
+    sublist_count = len(a_list) // 3 #jarak awal dengan membagi len daftar dengan 3
+    while sublist_count > 0: #loop > 0, gap akan berkurang, elemen berdekatan akan diurutkan
+      for start_position in range(sublist_count):
+        gap_insertion_sort(a_list, start_position, sublist_count)
+      print("setelah kenaikan", sublist_count, "list menjadi", a_list)
+      sublist_count = sublist_count // 3
+    return a_list
+
+def gap_insertion_sort(a_list, start, gap):
+  for i in range(start + gap, len(a_list), gap):
+    current_value = a_list[i]
+    position = i
+    while position >= gap and a_list[position - gap] > current_value:
+        a_list[position] = a_list[position - gap]
+        position = position - gap
+        a_list[position] = current_value
+
+contoh_list = [32, 45, 67, 96, 78, 84, 12, 56, 27, 9]
+print('Sebelum diurutkan:', contoh_list)
+sorted_list = shell_sort(contoh_list)
+print('Setelah diurutkan:', sorted_list)
