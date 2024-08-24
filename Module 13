@@ -1,0 +1,4 @@
+#Perulangan dengan fungsi range
+for i in range(10, 20):
+  print('i =', i)
+
