@@ -1,0 +1,9 @@
+#Deklarasi fungsi menampilkan person
+def greeting(name):
+  print(name)
+person1 = {
+    'name': 'Chija',
+    'age': 23,
+    'country': 'Indonesia'
+}
+print((person1))
