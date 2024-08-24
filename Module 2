@@ -1,0 +1,12 @@
+#Penggunaan Variabel pada program Python
+
+#proses memasukkan data kedalam variabel
+nama = "akbar usamah"
+#nilai dan variabel dapat diubah
+umur = 20
+print(nama)       #nilai awal
+print(umur)       #mencetak nilai umur
+print(type(umur)) #mengecek tipe data umur
+umur_ = "dua puluh dua" #nilai setelah diubah
+print(umur_)     #mencetak nilai umur
+print(type(umur_))
